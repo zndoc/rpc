@@ -14,95 +14,16 @@
 
 ## Код ошибки
 
-| Tables        | Are           | Cool  |
-| ------------- |:-------------:| -----:|
-| col 3 is      | right-aligned | $1600 |
-| col 2 is      | centered      |   $12 |
-| zebra stripes | are neat      |    $1 |
-
-### Ошибка разбора
-
-* Код - -32700
-* Описание - Сервер получил недействительный JSON. На сервере произошла ошибка при разборе текста JSON.
-
-### Ошибка разбора
-
-
-
-* Неподдерживаемая кодировка.
-* /
-const UNSUPPORTED_ENCODING = -32701;
-
-### 
-
-/ **
-* Ошибка разбора
-* Неверный символ для кодировки.
-* /
-const INVALID_CHARACTER_FOR_ENCODING = -32702;
-
-### 
-
-/**
-* Server error
-* Invalid Request
-* The JSON sent is not a valid Request object.
-*/
-const INVALID_REQUEST = -32600;
-
-### 
-
-/**
-* Server error
-* Method not found
-* The method does not exist / is not available.
-*/
-const METHOD_NOT_FOUND = -32601;
-
-### 
-
-/**
-* Server error
-* Invalid params
-* Invalid method parameter(s).
-*/
-const INVALID_PARAMS = -32602;
-
-### 
-
-/**
-* Server error
-* Internal JSON-RPC error.
-*/
-const JSON_RPC_ERROR = -32603;
-
-### 
-
-/**
-* application error
-*/
-const APPLICATION_ERROR = -32500;
-
-### 
-
-/**
-* system error
-*/
-const SYSTEM_ERROR = -32400;
-
-### 
-
-/**
-* transport error
-*/
-const TRANSPORT_ERROR = -32300;
-
-### 
-
-/**
-* Server error
-* Reserved for implementation-defined server-errors.
-* -32000 to -32099
-*/
-
-
+| Код        | Категория           | Описание
+| --- | --- | ---
+| -32700 | Ошибка разбора | Сервер получил недействительный JSON. На сервере произошла ошибка при разборе текста JSON.
+| -32701 | Ошибка разбора | Неподдерживаемая кодировка.
+| -32702 | Ошибка разбора | Неверный символ для кодировки.
+| -32600 | Ошибка сервера | Неверный запрос. Отправленный JSON не является допустимым объектом запроса.
+| -32601 | Ошибка сервера | Метод не найден. Метод не существует / недоступен.
+| -32602 | Ошибка сервера | Неверные параметры. Неверный параметр (ы) метода.
+| -32603 | Ошибка сервера | Внутренняя ошибка JSON-RPC.
+| -32500 | Ошибка приложения |  
+| -32400 | системная ошибка |  
+| -32300 | транспортная ошибка |  
+| От -32000 до -32099 | Ошибка сервера | Зарезервировано для ошибок сервера, определенных реализацией. 
