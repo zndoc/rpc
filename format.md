@@ -24,13 +24,13 @@
 Пример запроса:
 
 ```json
-{"jsonrpc":"2.0","method": "echo", "params": ["Hello JSON-RPC"], "id":1}
+{"jsonrpc": "2.0", "method": "echo", "params": ["Hello JSON-RPC"], "id":1}
 ```
 
 Пример ответа:
 
 ```json
-{"jsonrpc":"2.0","result": "Hello JSON-RPC", "error": null, "id":1}
+{"jsonrpc": "2.0", "result": "Hello JSON-RPC", "error": null, "id":1}
 ```
 ## Batch-запрос
 
@@ -38,8 +38,8 @@
 
 ```json
 [
-  {"jsonrpc":"2.0","method":"server.shutdown","params":{"server":"42"},"id":1},
-  {"jsonrpc":"2.0","method":"server.remove","params":{"server":"24"},"id":2}
+  {"jsonrpc": "2.0", "method": "server.shutdown", "params": {"server":"42"}, "id": 1},
+  {"jsonrpc": "2.0", "method": "server.remove", "params": {"server":"24"}, "id": 2}
 ]
 ```
 
@@ -47,8 +47,8 @@
 
 ```json
 [
-  {"jsonrpc":"2.0","result":{"status":"down"},"id":1}
-  {"jsonrpc":"2.0","error":{"code":1234,"message":"Server not found"},"id": 2}
+  {"jsonrpc": "2.0", "result": {"status": "down"}, "id":1}
+  {"jsonrpc": "2.0", "error": {"code": 1234, "message": "Server not found"}, "id": 2}
 ]
 ```
 ## Нотификация
@@ -58,5 +58,5 @@
 Пример запроса:
 
 ```json
-{"jsonrpc":"2.0","method":"post.updated","params":{"id":"142"}}
+{"jsonrpc": "2.0", "method": "post.updated", "params": {"id": "142"}}
 ```
