@@ -34,19 +34,19 @@
 Насколько stateless должен быть API, чтобы не причинять проблем? Для контраста вспомним по-настоящему statefull протокол  —  FTP.
 
 ```
-  Клиент: [открывает TCP-соединение]
-  Сервер: 220 ProFTPD 1.3.1 Server (ProFTPD)
-  Клиент: USER anonymous
-  Сервер: 331 Anonymous login ok, send complete email address as your password
-  Клиент: PASS user@example.com
-  Сервер: 230 Anonymous access granted, restrictions apply
-  Клиент: CWD posts/latest
-  Сервер: 250 CWD command successful
-  Клиент: RETR rest_api.txt
-  Сервер: 150 Opening ASCII mode data connection for rest_api.txt (4321 bytes)
-  Сервер: 226 Transfer complete
-  Клиент: QUIT
-  Сервер: 221 Goodbye.
+Клиент: [открывает TCP-соединение]
+Сервер: 220 ProFTPD 1.3.1 Server (ProFTPD)
+Клиент: USER anonymous
+Сервер: 331 Anonymous login ok, send complete email address as your password
+Клиент: PASS user@example.com
+Сервер: 230 Anonymous access granted, restrictions apply
+Клиент: CWD posts/latest
+Сервер: 250 CWD command successful
+Клиент: RETR rest_api.txt
+Сервер: 150 Opening ASCII mode data connection for rest_api.txt (4321 bytes)
+Сервер: 226 Transfer complete
+Клиент: QUIT
+Сервер: 221 Goodbye.
 ```
 
 Состояние сеанса хранится на сервере. FTP-сервер помнит, что клиент уже прошел аутентификацию в начале сеанса, и помнит, в каком каталоге сейчас «находится» этот клиент.
