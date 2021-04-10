@@ -1,7 +1,7 @@
 # RPC документация
 
-* [Преимущества](advantage.md)
-* [Подвондные камни](surprise.md)
-* [Формат](format.md)
-* [Ошибки](error.md)
-* [Ссылки](links.md)
+* [Преимущества](./docs/advantage.md)
+* [Подвондные камни](./docs/surprise.md)
+* [Формат](./docs/format.md)
+* [Ошибки](./docs/error.md)
+* [Ссылки](./docs/links.md)

@@ -1,0 +1,1 @@
+API основано на контрактах - https://github.com/zndoc/rpc/blob/master/docs/contract/README.md
