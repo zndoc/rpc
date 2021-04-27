@@ -6,8 +6,8 @@
 {
   "jsonrpc": "2.0",
   "error": {
-    "code": 123,
-    "message": "Post not found"
+    "code": -32603,
+    "message": "Missing credentials in config"
   },
   "id": null
 }
