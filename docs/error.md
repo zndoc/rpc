@@ -9,7 +9,7 @@
     "code": 123,
     "message": "Post not found"
   },
-  "id": "1"
+  "id": null
 }
 ```
 
@@ -45,12 +45,10 @@
 {
   "jsonrpc": "2.0",
   "error": {
-    "body": {
-      "code": 401,
-      "message": "Unauthorized"
-    }
+    "code": 401,
+    "message": "Unauthorized"
   },
-  "id": 1
+  "id": null
 }
 ```
 
@@ -60,12 +58,10 @@
 {
   "jsonrpc": "2.0",
   "error": {
-    "body": {
-      "code": 403,
-      "message": "Forbidden"
-    }
+    "code": 403,
+    "message": "Forbidden"
   },
-  "id": 1
+  "id": null
 }
 ```
 
@@ -74,8 +70,10 @@
 ```json
 {
   "jsonrpc": "2.0",
-  "result": {
-    "body": [
+  "error": {
+    "code": 422,
+    "message": "Unprocessable Entity",
+    "data": [
       {
         "field": "email",
         "message": "Учетная запись email@mail.com уже существует"
