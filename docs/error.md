@@ -3,7 +3,14 @@
 Пример ответа об ошибке:
 
 ```json
-{"jsonrpc": "2.0", "error": {"code": 123, "message": "Post not found"}, "id": "1"}
+{
+  "jsonrpc": "2.0",
+  "error": {
+    "code": 123,
+    "message": "Post not found"
+  },
+  "id": "1"
+}
 ```
 
 У параметра `error` есть атрибуты:
